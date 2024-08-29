@@ -1,0 +1,46 @@
+---
+title: "Só o lado técnico não basta"
+language: "pt"
+publishedAt: "2024-10-21"
+summary: "A combinação de conhecimento técnico com habilidades comportamentais é o que destaca um profissional de tecnologia. Uma vez que as habilidades técnicas são semelhantes, as comportamentais se tornam as diferenciais."
+keywords: "habilidades comportamentais, habilidades técnicas, desenvolvimento de software, engenheiro de software, comunicação"
+---
+
+O nível técnico de um desenvolvedor está diretamente ligado ao seu tempo de experiência. Independente da senioridade que ocupam, se compararmos desenvolvedores com tempos de experiência similares eles apresentarão habilidades técnicas similares.
+
+Isso acontece por dois fatores principais:
+
+- O contato diário com o código aprimora naturalmente seu conhecimento técnico;
+- Há uma forte tendência no foco do aprimoramento das competências técnicas, uma vez que a proficiência em codificação é vista como a chave para o sucesso na carreira.
+
+De fato, as habilidades técnicas são a base, mas somente isso não o torna um profissional diferenciado, apenas o faz um desenvolvedor tecnicamente consolidado no mercado.
+
+O conhecimento profundo de linguagens de programação, frameworks e ferramentas é crucial, mas para se tornar um desenvolvedor fora da curva é necessário ir além. As habilidades comportamentais não são refinadas da mesma forma e, na maioria das vezes, não nos preocupamos em aprimorá-las. Acabamos negligenciando um aspecto fundamental que diferencia os profissionais de tecnologia.
+
+As soft skills englobam um conjunto de capacidades que envolvem a interação com outras pessoas e a gestão de si mesmo no ambiente de trabalho. Comunicação eficaz, capacidade de trabalhar em equipe, resolução de problemas, a gestão do tempo, priorização e senso de urgência são algumas delas. Essas habilidades são fundamentais porque o desenvolvimento de software raramente é um esforço isolado, ele envolve colaboração constante com outros desenvolvedores, designers, gerentes de projeto, stakeholders e clientes.
+
+Um desenvolvedor que não consegue comunicar suas ideias claramente, seja ela falada ou escrita pode encontrar dificuldades, independentemente de quão tecnicamente competente seja. Por exemplo, a comunicação eficaz é essencial para garantir que todos os membros da equipe estejam alinhados com os objetivos do projeto.
+
+Para se comunicar efetivamente devemos ser claros, convincentes e diretos. Saber escutar e a não interromper são atitudes primordiais. Um dev que explica um bloqueio técnico, argumentando a nova solução de maneira simples e compreensível ao time de design ou produto, encontrará restrições mínimas de aceitação, tornando o processo mais fluido e eficiente. Lembre-se que a maioria das vezes o restante da equipe não possui o conhecimento técnico para entender as limitações de código.
+
+Não basta apenas dizer que o item na lista não é inserido porque o estado está sendo "mutado". O ideal seria dizer que o item não está sendo inserido porque o estado não está identificando mudanças, e, para resolver o problema, precisamos trocar apenas uma linha criando uma nova referência para que as mudanças sejam assimiladas.
+
+```jsx
+// Mutando items o state não identificará a mudança
+const handleAddItem = (value) => {
+  items.push(value);
+  setItems(items);
+};
+```
+
+```jsx
+// Criando uma nova referência utilizando o operador de spread o state identificar a mudança
+const handleAddItem = (value) => {
+  const nextItems = [...items, value];
+  setItems(items);
+};
+```
+
+Abstraindo a ideia, todos passam a entender genericamente o problema, a solução e quanto tempo será preciso para efetuar a correção.
+
+Portanto, para ser um profissional completo e bem-sucedido na área de tecnologia, é essencial desenvolver tanto as habilidades técnicas quanto as comportamentais. Ignorar as soft skills é limitar o crescimento na carreira e oportunidades de destaque. É fundamental que os desenvolvedores reconheçam a importância dessas competências e busquem aprimorá-las continuamente. Afinal, a combinação de habilidades técnicas apuradas com soft skills robustas é o que diferencia os desenvolvedores no dia de hoje, uma vez que a maioria é tecnicamente correspondente, mas não comportalmente.
