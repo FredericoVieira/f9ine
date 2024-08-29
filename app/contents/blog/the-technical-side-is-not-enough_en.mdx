@@ -1,0 +1,44 @@
+---
+title: "The technical side is not enough"
+language: "en"
+publishedAt: "2024-10-21"
+summary: "The combination of technical expertise and interpersonal skills distinguishes a technology professional. As technical abilities are often similar, behavioral skills become the defining factor."
+keywords: "soft skills, technical skills, sofwtare development, software engineer, communication"
+---
+
+A developer's technical level is directly linked to their experience. Regardless of their seniority level, when comparing developers with similar experience times, they tend to show similar technical skills. This happens due to two main factors:
+
+- Daily contact with code naturally enhances technical knowledge;
+- There is a strong tendency to focus on improving technical competencies, as coding proficiency is seen as the key to career success.
+
+Indeed, technical skills are the foundation, but these alone won't make you a distinguished professional, they merely make you a technically established developer in the market.
+
+Deep knowledge of programming languages, frameworks, and tools is crucial, but to become an outstanding developer, you need to go beyond that. Behavioral skills are not refined in the same way and, most of the time, we don't worry about improving them. We end up neglecting a fundamental aspect that differentiates technology professionals.
+
+Soft skills encompass a set of capabilities that involve interacting with others and managing oneself in the work environment. Effective communication, teamwork ability, problem-solving, time management, prioritization, and sense of urgency are some of them. These skills are primordial on software development because it is rarely an isolated effort, it involves constant collaboration with other developers, designers, project managers, stakeholders, and clients.
+
+A developer who cannot communicate their ideas clearly, whether spoken or written, may encounter difficulties regardless of how technically competent he is. For example, effective communication is essential to ensure all team members are aligned with project objectives.
+
+To communicate effectively, we must be clear, convincing, and direct. Knowing how to listen and not interrupt are fundamental attitudes. A developer who explains a technical blocker, arguing for a new solution in a simple and comprehensible way to the design or product team, will encounter minimal acceptance restrictions, making the process more fluid and efficient. Remember that most of the time, the rest of the team doesn't have the technical knowledge to understand code limitations.
+
+It's not enough to just say that an item in the list isn't being inserted because the state is being "mutated". It would be better to say that the item isn't being inserted because the state isn't identifying changes, and to solve the problem, we need to change just one line by creating a new reference so that the changes can be assimilated.
+
+```jsx
+// Mutating items the state will not identify the change
+const handleAddItem = (value) => {
+  items.push(value);
+  setItems(items);
+};
+```
+
+```jsx
+// Creating a new identity using the spread operator the state will identify the change
+const handleAddItem = (value) => {
+  const nextItems = [...items, value];
+  setItems(items);
+};
+```
+
+By abstracting the idea, everyone can generally understand the problem, the solution, and how much time will be needed to make the correction.
+
+Therefore, to be a complete and successful professional in the technology field, it's essential to develop both technical and behavioral skills. Ignoring soft skills is limiting career growth and opportunities to stand out. It's fundamental that developers recognize the importance of these competencies and seek to improve them continuously. After all, the combination of refined technical skills with robust soft skills is what differentiates developers today, since most are technically competent but not behaviorally so.
