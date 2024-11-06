@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { MDXRemoteProps } from "next-mdx-remote/rsc";
 import type { ComponentPropsWithoutRef } from "react";
 import { highlight } from "sugar-high";
@@ -13,6 +14,20 @@ const code = (props: ComponentPropsWithoutRef<"code">) => {
       dangerouslySetInnerHTML={{ __html: codeHTML }}
       className="block w-full overflow-x-auto"
       {...propsRest}
+    />
+  );
+};
+
+const img = (props: ComponentPropsWithoutRef<"img">) => {
+  const { src = "", alt = "" } = props ?? {};
+
+  return (
+    <Image
+      src={src}
+      alt={alt}
+      width={500}
+      height={500}
+      className="mx-auto my-8 rounded-lg"
     />
   );
 };
@@ -38,6 +53,7 @@ const pre = (props: ComponentPropsWithoutRef<"pre">) => (
 
 const MdxComponents: MdxComponentsType = {
   code,
+  img,
   ul,
   li,
   p,

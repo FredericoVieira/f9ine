@@ -1,0 +1,62 @@
+---
+title: "Que #%$! é essa!?"
+language: "pt"
+publishedAt: "2024-11-07"
+summary: "A qualidade de um código pode ser medida pelo número de palavrões ditos por minuto. Podemos aplicar algumas técnicas simples de clean code para melhorar a legibilidade do código e diminuir essa frustação."
+keywords: "clean code, código limpo, qualidade de código, legibilidade, manutenção de código"
+---
+
+Já parou para pensar que podemos medir a qualidade de um código contando quantas vezes falamos "Que #%$! é essa!?" por minuto? Essa métrica informal, mas reveladora, nos mostra o quão frustado ficamos a cada linha de código confuso, desorganizado e sem padrão.
+
+![Imagem comparando um código bom e um ruim pela quantidades de palavrões proferidos](/blog/what-the-****-is-this.jpg)
+
+Para reduzir o número de palavrões ditos por minuto podemos aplicar algumas técnicas simples de clean code para melhorar a legibilidade do código, e tornar o processo de manutenção menos doloroso.
+
+- Use nomes significativos
+
+Não se preocupe em economizar algumas teclas. É melhor um nome extenso com significado do que poucos caracteres sem sentido.
+
+```jsx
+// Ruim
+const ages = arr.map((i) => i.age);
+
+// Bom
+const ages = users.map((user) => user.age);
+```
+
+- Comente só o necessário
+
+Bons códigos são auto-explicativos e na maioria das vezes se documentam por si só. É válido escrever um comentário para esclarecer regras complexas, alertar sobre side effects ou explicar partes do código que não são tão simples. Não deixe código sem uso ou comentado, o controle de versão existe por esse motivo e deve ser usado nesses casos!
+
+```jsx
+// Ruim: Verifica se a data é válida
+const isValidDate = (date) => {
+  // ...
+};
+
+const isValidDate = (date) => {
+  // Bom: Verifica correspondência com o padrão DD-MM-YYYY
+  if (/^\d{1,2}\/\d{1,2}\/\d{4}$/.test(date)) {
+    // ...
+  }
+  // ...
+};
+```
+
+- Utilize constantes nomeadas
+
+Valores mágicos não transmitem seu propósito. Constantes nomeadas melhoram a clareza, facilitam a manutenção e tornam o código auto-documentado.
+
+```jsx
+// Ruim
+// 10% de desconto
+const discount = price * 0.1;
+
+// Bom
+const TEN_PERCENT_DISCOUNT;
+const discount = price * TEN_PERCENT_DISCOUNT;
+```
+
+Além dessas técnicas, podemos citar indentação e espacamentos, refatoração de funções muito longas, organização do código com padrões bem definidos, testes independentes e mais.
+
+Se você tem xingado muito enquanto trabalha, talvez esteja na hora de repensar algumas práticas. Uma código de qualidade facilita a vida de quem vai precisar dar manutenção no futuro e diz muito sobre o profissional que o escreveu.
