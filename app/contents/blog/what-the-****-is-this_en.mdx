@@ -1,0 +1,62 @@
+---
+title: "What the #%$! is this!?"
+language: "en"
+publishedAt: "2024-11-07"
+summary: "The code quality can be measured by the number of curse words said per minute. We can apply some clean code techniques to improve readability and reduce frustration."
+keywords: "clean code, code quality, code maintenance, readability"
+---
+
+Have you ever thought that we can measure the code quality by counting how many times we say "What the #%$! is this!?" per minute? This informal but revealing metric shows how frustrated we get with each confusing, disorganized, and patternless code line.
+
+![Image comparing good and bad code by illustrating the frequency of curse words used](/blog/what-the-****-is-this.jpg)
+
+To reduce the number of curse words said per minute, we can apply some simple clean code techniques to improve code readability and make the maintenance process less painful.
+
+- Use meaningful names
+
+Don't worry about saving a few keystrokes. Having a long and meaningful name is better than a few characters without meaning.
+
+```jsx
+// Bad
+const ages = arr.map((i) => i.age);
+
+// Good
+const ages = users.map((user) => user.age);
+```
+
+- Comment only what's necessary
+
+Good code is self-explanatory and often documents itself. It's worth writing a comment to clarify complex rules, warn about side effects, or explain parts of the code that aren't so simple. Don't leave unused or commented-out code, version control exists for this purpose and should be used in these cases!
+
+```jsx
+// Bad: Checks if the date is valid
+const isValidDate = (date) => {
+  // ...
+};
+
+const isValidDate = (date) => {
+  // Good: Checks for the DD-MM-YYYY pattern
+  if (/^\d{1,2}\/\d{1,2}\/\d{4}$/.test(date)) {
+    // ...
+  }
+  // ...
+};
+```
+
+- Use named constants
+
+Magic values don't convey their purpose. Named constants improve clarity, facilitate maintenance, and make the code self-documenting.
+
+```jsx
+// Bad
+// 10% discount
+const discount = price * 0.1;
+
+// Good
+const TEN_PERCENT_DISCOUNT;
+const discount = price * TEN_PERCENT_DISCOUNT;
+```
+
+In addition to these techniques, we can mention indentation and spacing, refactoring of very long functions, code organization with well-defined patterns, independent tests, and more.
+
+If you've found yourself cursing while working, it may be time to reevaluate your practices. Writing quality code not only simplifies life for those who will maintain it in the future but also says a lot about the professional who wrote it.

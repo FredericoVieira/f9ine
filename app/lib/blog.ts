@@ -59,19 +59,23 @@ export const getPostsData = () => {
     .readdirSync(BLOGS_DIRECTORY)
     .filter((file) => file.includes(`_${EN}`) && file.endsWith(".mdx"));
 
-  const postsMetadata = posts.map((post) => {
-    const slug = post.replace(/_[a-z]{2}\.mdx/i, "");
-    const filePath = path.join(BLOGS_DIRECTORY, post);
+  const postsMetadata = posts
+    .map((post) => {
+      const slug = post.replace(/_[a-z]{2}\.mdx/i, "");
+      const filePath = path.join(BLOGS_DIRECTORY, post);
 
-    const { title, summary, publishedAt } = getData(filePath);
+      const { title, summary, publishedAt } = getData(filePath);
 
-    return {
-      slug,
-      title,
-      summary,
-      publishedAt,
-    };
-  });
+      return {
+        slug,
+        title,
+        summary,
+        publishedAt,
+      };
+    })
+    .sort(({ publishedAt: a }, { publishedAt: b }) => {
+      return a > b ? -1 : 1;
+    });
 
   return postsMetadata;
 };
