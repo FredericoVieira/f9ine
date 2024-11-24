@@ -32,6 +32,10 @@ const img = (props: ComponentPropsWithoutRef<"img">) => {
   );
 };
 
+const ol = (props: ComponentPropsWithoutRef<"ol">) => (
+  <ol className="list-decimal pl-6 my-4" {...props} />
+);
+
 const ul = (props: ComponentPropsWithoutRef<"ul">) => (
   <ul className="list-disc pl-6 my-4" {...props} />
 );
@@ -54,6 +58,7 @@ const pre = (props: ComponentPropsWithoutRef<"pre">) => (
 const MdxComponents: MdxComponentsType = {
   code,
   img,
+  ol,
   ul,
   li,
   p,
