@@ -7,23 +7,19 @@ const Home = () => {
       <Header title="Hey, I'm Fred!" />
       <div className="space-y-7 text-base text-zinc-400 mb-12 sm:mb-16">
         <p>
-          I am a software engineer who is passionate about creating projects
-          that simplify users&apos; lives.
+          I am a seasoned full-stack developer with more than ten years of
+          transforming complex challenges into smart user-centric solutions,
+          with a deep focus on front-end excellence.
         </p>
         <p>
-          With a degree in Computer Engineering and over a decade of experience
-          in the development of technological solutions, I have been responsible
-          for developing projects in different areas such as mobile
-          applications, dashboards, data, design, and communication platforms.
+          With a degree in Computer Engineering, I have expertise in crafting
+          high-performance applications using React and React Native, backed by
+          a proven track record in creating intuitive interfaces, data
+          visualization, and mobile apps.
         </p>
         <p>
-          Throughout my career, I have dealt with all software parts having
-          front-end, back-end, and cloud technology skills.
-        </p>
-        <p>
-          Over the past few years, I have been extensively engaged with
-          JavaScript and React, creating amazing interfaces to improve user
-          experience, but I also like to venture with Node.js and Python.
+          I am passionate about leveraging JavaScript, Node.js, and Python to
+          build innovative products.
         </p>
       </div>
       <PhotoGrid />
