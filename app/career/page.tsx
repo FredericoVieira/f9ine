@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { career } from "@/contents";
@@ -66,7 +67,7 @@ const Career = () => {
                   </p>
                   <div
                     aria-hidden="true"
-                    className="relative z-10 mt-4 flex items-center text-sm font-medium text-zinc-400"
+                    className="relative z-10 mt-4 flex items-center text-sm font-medium text-zinc-400 whitespace-pre-line"
                   >
                     {description}
                   </div>

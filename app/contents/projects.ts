@@ -1,3 +1,4 @@
+import studio from "@/public/projects/studio.png";
 import mobileBuilder from "@/public/projects/mobile-builder.png";
 import nordy from "@/public/projects/nordy.png";
 import hp from "@/public/projects/hp.png";
@@ -12,6 +13,14 @@ import gravol from "@/public/projects/gravol.png";
 
 const projects = [
   {
+    image: studio,
+    title: "Studio",
+    description:
+      "Web platform to manage and analyze user engagement and product adoption.",
+    url: "https://www.appcues.com/",
+    displayUrl: "appcues.com",
+  },
+  {
     image: mobileBuilder,
     title: "Mobile Builder",
     description:
@@ -24,7 +33,7 @@ const projects = [
     title: "Nordy",
     description:
       "Web dictionary with words and meanings learned by me on a daily basis.",
-    url: "https://nordy.vercel.app/",
+    url: "https://nordy.vercel.app",
     displayUrl: "nordy.vercel.app",
     source: "https://github.com/FredericoVieira/nordy",
   },
@@ -41,7 +50,7 @@ const projects = [
     title: "Lilly Tempo Website",
     description:
       "Personalized Diabetes Management Platform for patients and healthcare professionals.",
-    url: "https://www.lillytempo.com/",
+    url: "https://www.lillytempo.com",
     displayUrl: "lillytempo.com",
   },
   {
@@ -57,7 +66,7 @@ const projects = [
     title: "IZZI Gaming",
     description:
       "Web platform of coaching, courses, and game replay analysis to improve e-players skills.",
-    url: "https://izzi.gg/",
+    url: "https://izzi.gg",
     displayUrl: "izzi.gg",
   },
   {
@@ -73,7 +82,7 @@ const projects = [
     title: "KIM+ App",
     description:
       "Service management app with bills payment, phone data recharge and discounts offers.",
-    url: "https://kimmais.app/",
+    url: "https://kimmais.app",
     displayUrl: "kimmais.app",
   },
   {
@@ -87,7 +96,7 @@ const projects = [
     title: "Dataviva",
     description:
       "Collaborative visualization platform of Brazilian socioeconomic data, with data analysis and comparison.",
-    url: "http://dataviva.info/pt/",
+    url: "http://dataviva.info/pt",
     displayUrl: "dataviva.info",
     source: "https://github.com/DataViva",
   },

@@ -13,7 +13,7 @@ Clone the repo, enter in the f9ine folder and install the dependencies:
 ```
 git clone https://github.com/fredvieira.git
 cd f9ine
-bun install
+npm install
 ```
 
 Node.js version >= v18.17.0 is required for run this project.
@@ -34,13 +34,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 If you like to try the production build, run:
 
 ```
-bun run build
+npm run build
 ```
 
 And then:
 
 ```
-bun run start
+npm run start
 ```
 
 ## Features
