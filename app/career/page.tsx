@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { career } from "@/contents";
@@ -28,7 +29,9 @@ const Career = () => {
       <Header
         title={headerTitle}
         titleAction={titleAction}
-        subtitle="Software engineer and React specialist, passionate about creating beautiful designs and exceptional user interfaces. I develop custom solutions for web and mobile platforms using JavaScript, Node, and Python."
+        subtitle="Senior Software Engineer and React specialist focused on building scalable,
+        user-facing products with strong UX. I develop high-performance web and mobile applications
+        using JavaScript, Node.js, and Python."
       />
       <div className="md:border-l md:pl-6 md:border-zinc-700/40 mb-16">
         <div className="flex max-w-3xl flex-col space-y-16">
@@ -37,7 +40,7 @@ const Career = () => {
               company,
               role,
               description,
-              technologies,
+              achievements,
               startDate,
               endDate,
             }) => (
@@ -66,15 +69,15 @@ const Career = () => {
                   </p>
                   <div
                     aria-hidden="true"
-                    className="relative z-10 mt-4 flex items-center text-sm font-medium text-zinc-400"
+                    className="relative z-10 mt-4 flex items-center text-sm font-medium text-zinc-400 whitespace-pre-line"
                   >
                     {description}
                   </div>
                   <div
                     aria-hidden="true"
-                    className="relative z-10 mt-4 flex items-center text-sm font-medium text-zinc-500"
+                    className="relative z-10 mt-4 flex items-center text-sm font-medium text-zinc-500 whitespace-pre-line"
                   >
-                    Technologies: {technologies}
+                    {achievements}
                   </div>
                 </div>
                 <time
@@ -84,7 +87,7 @@ const Career = () => {
                   {formatStartEndDate(startDate, endDate)}
                 </time>
               </section>
-            )
+            ),
           )}
         </div>
       </div>

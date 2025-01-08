@@ -3,9 +3,14 @@ const uses = [
     id: "workstation",
     items: [
       {
-        title: "14” MacBook Pro M1 16GB RAM (2021)",
+        title: "14” MacBook Pro M4 24GB RAM (2024)",
         description:
           "The 14-inch MacBook has the perfect size, it's easy to carry around and offers great performance. I prefer programming in the Mac environment because of its user-friendly interface, elegant design, and simple management of software and packages. Despite having used Windows and Linux, Mac has the best developing experience so far.",
+      },
+      {
+        title: "Mac Mini M4 24GB RAM (2024)",
+        description:
+          "The compact mini desktop I use for working from home. It's small, takes up little space, and delivers excellent performance.",
       },
       {
         title: "34” Dell WQHD Display",
@@ -13,14 +18,24 @@ const uses = [
           "This monitor has a curved display with 3440 x 1440 resolution and 144Hz refresh rate. I can open multiple windows on the same screen, increasing productivity and reducing tab switching.",
       },
       {
-        title: "HyperX Alloy FPS Keyboard",
+        title: "Keychron K6 Pro Keyboard",
         description:
-          "It is a keyless mechanical gaming keyboard with Cherry MX key switches, a numpad, and red LED backlighting. The keyboard is pleasant to type on and has a comfortable hand position.",
+          "Wireless 65% custom mechanical keyboard with hot-swappable MX switches and full macro control via the Keychron Launcher. Features Red switches for a smooth, linear, and quiet typing experience, ideal for fast typing and gaming.",
       },
       {
-        title: "HyperX Pulsefire Dart",
+        title: "Keychron M6 Mouse",
         description:
-          "Is a gaming-grade wireless mouse with a reliable 2.4GHz RF connection. It’s ergonomically-shaped and features padded leatherette side grips designed to keep you comfortable. It is a great all-around mouse as a result of its larger design and luxurious styling.",
+          "Wireless performance mouse featuring the PixArt 3950 sensor and 8K polling rate for ultra-fast, precise tracking. Designed for responsiveness and smooth control in both work and gaming.",
+      },
+      {
+        title: "Logitech MX Brio Webcam",
+        description:
+          "4K UHD webcam with sharp image quality and enhanced low-light performance, ideal for professional video calls.",
+      },
+      {
+        title: "HyperX QuadCast",
+        description:
+          "High-quality USB microphone with integrated shock mount and pop filter, providing crisp audio and easy setup for streaming, recording, and calls.",
       },
     ],
   },
@@ -28,9 +43,9 @@ const uses = [
     id: "development-tools",
     items: [
       {
-        title: "Visual Studio Code",
+        title: "Cursor",
         description:
-          "It is highly customizable with an attractive design and easy-to-use interface. Additionally, it is compatible with all platforms and great for web development.",
+          "Is an AI-first code editor that is based on the Visual Studio Code. This means it leverages the familiar interface and extensive extension ecosystem, while integrating advanced AI functionalities natively.",
       },
       {
         title: "Hyper terminal",

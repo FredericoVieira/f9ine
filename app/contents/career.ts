@@ -2,70 +2,77 @@ const career = [
   {
     company: "Appcues",
     role: "Senior Software Engineer / Remote",
-    description:
-      "I am currently working as a software engineer, responsible for developing technical solutions, assessing and implementing new features, addressing technical debts, and reviewing code and unit tests. In addition, I work closely with designers to evaluate the feasibility and optimal approach for prototyped functionalities.",
-    technologies:
-      "JavaScript (React, Redux, Redux-Saga), HTML / CSS (SASS, Styled Components).",
+    description: `- Delivered high-impact user-facing features across core products, improving performance and usability
+    - Partnered closely with product and design to evaluate feasibility and deliver intuitive, high-impact solutions
+    - Drove implementation of new features while reducing technical debt and maintaining code quality through reviews and testing`,
+    achievements: `
+    - Built mobile workflows that contributed to acquiring 100+ customers in the first year
+    - Developed multi-channel messaging features (email + push), improving user engagement
+    - Contributed to the rewrite of the Flows builder, increasing flexibility and enabling advanced user journeys
+    - Enhanced the core SDK powering experience delivery, including rendering, user identification, targeting, and event tracking`,
     startDate: "2022-04-01T24:00:00.000Z",
     endDate: null,
   },
   {
     company: "Arctouch",
     role: "Senior Software Engineer - Tech Lead / Remote",
-    description:
-      "I was responsible for leading a team of developers and overseeing the creation of technical solutions, including system architecture design. I also attended technical/product meetings to evaluate the technical side of the decisions. Additionally, I assisted with coding and creating tests.",
-    technologies:
-      "JavaScript (Axios, React, Typescript, Vue, Nuxt, GSAP), HTML / CSS (SASS, Styled Components), Single Spa (MFE's), Rollup.",
+    description: `- Led a team of developers, driving delivery of technical solutions and ensuring high code quality
+    - Designed system architecture and guided technical decisions across projects
+    - Partnered with product and stakeholders to evaluate feasibility and define implementation strategies
+    - Stayed hands-on, contributing to critical parts of the codebase and ensuring high-quality delivery`,
     startDate: "2021-09-01T24:00:00.000Z",
     endDate: "2022-03-01T24:00:00.000Z",
   },
   {
     company: "Syngenta",
     role: "Senior Software Engineer / Remote",
-    description:
-      "I worked on a dashboard/management software, where I evaluated and implemented new features, resolved technical debt, guided developers, and created unit and integration tests. I was selected to join a team responsible for the sugarcane cultivation module. The main challenge was making the system run smoothly consuming a large amount of data provided by thousands of hectares.",
-    technologies:
-      "JavaScript (Axios, Jest, React, React Testing Library, Redux, RxJS, TypeScript), HTML / CSS (Ant Design, SASS), AWS (CloudWatch, DynamoDB, Lambda, S3), Redis.",
+    description: `- Developed and scaled a dashboard platform for agricultural management, delivering features focused on usability and performance 
+    - Evaluated and implemented new features while reducing technical debt and improving system reliability with unit and integration tests
+    - Guided other developers and contributed to code quality through reviews and testing practices`,
+    achievements: `- Selected to join the sugarcane cultivation module team, optimizing system performance to handle large-scale data from thousands of hectares `,
     startDate: "2020-05-01T24:00:00.000Z",
     endDate: "2021-08-01T24:00:00.000Z",
   },
   {
     company: "Stefanini",
     role: "Senior Software Engineer / Hybrid",
-    description:
-      "In this consultancy company, I was able to work on various projects. In most of them, I was in charge of technological decisions, which consisted of building the software's architecture, technical leadership, creation of web and mobile interfaces, development and evolution of RESTful APIs as well as unit and integration tests.",
-    technologies:
-      "JavaScript (Axios, Jest, NodeJS, React, React Native), HTML / CSS (React Native Paper, React Native Elements, UI Kitten, SASS), Webpack, Serverless, AWS (CloudWatch, DynamoDB, Lambda).",
+    description: `-Led technical decisions across multiple client projects, including system architecture and technology selection
+    - Designed and implemented scalable web and mobile applications, balancing performance and maintainability
+    - Built and evolved RESTful APIs, supporting complex product requirements
+    - Provided technical leadership, guiding developers and ensuring code quality through reviews and best practices
+    - Developed unit and integration tests to ensure reliability across systems`,
     startDate: "2019-01-01T24:00:00.000Z",
     endDate: "2020-04-01T24:00:00.000Z",
   },
   {
     company: "Ufmg",
     role: "Mid Software Engineer",
-    description:
-      "In addition to working in the full-stack development of laboratory projects, I performed the proposal and validation of the UI/UX. I also took charge of front-end and back-end technology choices, ensuring functionality maintenance, creating unit tests, and integrating systems with artificial intelligence algorithms.",
-    technologies:
-      "Technologies: JavaScript (Axios, React, Redux, Jest, Enzyme), HTML / CSS (Materialize, SASS), Python (Flask), Webpack, Docker.",
+    description: `- Developed full-stack applications for laboratory-driven projects, combining web technologies with AI-based solutions
+    - Defined front-end and back-end architecture, selecting technologies and ensuring long-term maintainability
+    - Built unit tests and supported system reliability across multiple applications
+    - Integrated systems with AI algorithms for real-time processing and intelligent features`,
+    achievements: `- Led UI/UX proposals and validation, improving usability and aligning interfaces with product requirements`,
     startDate: "2018-10-01T24:00:00.000Z",
     endDate: "2018-12-01T24:00:00.000Z",
   },
   {
     company: "Hekima",
     role: "Mid Software Engineer",
-    description:
-      "I worked mainly on the front-end development of a data preparation platform. I was in charge of the maintenance of functionalities, the creation of unit tests, and the resolution of technical debts. I also ventured into the back-end working with functional programming language.",
-    technologies:
-      "JavaScript (Enzyme, Jest, React, Redux, Relay, Charts.js), HTML / CSS (Materialize, SASS), Scala (Play), Webpack, GraphQL (Sangria), PostgreSQL, AWS (EC2, S3).",
+    description: `- Developed and maintained the front-end of a data preparation platform, focusing on performance, usability, and reliability
+    - Implemented new features and reduced technical debt, improving overall system stability
+    - Built unit tests to ensure quality across critical parts of the application
+    - Contributed to back-end development using functional programming (Scala), supporting data processing workflows`,
     startDate: "2017-06-01T24:00:00.000Z",
     endDate: "2018-09-01T24:00:00.000Z",
   },
   {
     company: "Fapemig",
     role: "Junior Software Engineer",
-    description:
-      "I worked as a full-stack developer on a socioeconomic data visualization platform. During the project, I was the most experienced junior developer and took the challenging tasks related to user interactions in the front-end and data manipulation in the back end.",
-    technologies:
-      "Technologies: JavaScript (D3, JQuery), HTML / CSS (Bootstrap), MySQL, Python (Flask), AWS (EC2, RDS, Redshift).",
+    description: `- Developed full-stack features for a socioeconomic data visualization platform, focusing on interactive and data-driven user experiences
+    - Took ownership of complex front-end interactions using D3, enabling dynamic and intuitive data exploration
+    - Contributed to back-end data processing and manipulation to support large-scale datasets
+    - Acted as a key contributor within the team, handling challenging tasks across both front-end and back-end`,
+    achievements: `- Recognized as the most experienced junior developer, taking on challenging tasks involving complex user interactions in front-end development and intricate data manipulation in back-end systems.`,
     startDate: "2015-08-01T24:00:00.000Z",
     endDate: "2017-05-01T24:00:00.000Z",
   },

@@ -1,3 +1,7 @@
+import funWithFlags from "@/public/projects/fun-with-flags.png";
+import layoffield from "@/public/projects/layoffield.png";
+import appcuesBuilder from "@/public/projects/appcues-builder.png";
+import studio from "@/public/projects/studio.png";
 import mobileBuilder from "@/public/projects/mobile-builder.png";
 import nordy from "@/public/projects/nordy.png";
 import hp from "@/public/projects/hp.png";
@@ -12,6 +16,40 @@ import gravol from "@/public/projects/gravol.png";
 
 const projects = [
   {
+    image: funWithFlags,
+    title: "Fun with Flags",
+    description:
+      "Course to learn the basics of web development with React, Next, TypeScript, Tailwind and API calls.",
+    url: "https://fwfcurso.f9ine.com",
+    displayUrl: "fwfcurso.f9ine.com",
+    source: "https://github.com/FredericoVieira/fwfcurso",
+  },
+  {
+    image: layoffield,
+    title: "Layoffield",
+    description:
+      "A web platform to track your layoff battles. your experiences and check the worldwide rank.",
+    url: "https://layoffield.vercel.app",
+    displayUrl: "layoffield.vercel.app",
+    source: "https://github.com/FredericoVieira/layoffield",
+  },
+  {
+    image: appcuesBuilder,
+    title: "Appcues Builder",
+    description:
+      "Chrome extension solution for creating flows on top of clients websites without coding.",
+    url: "https://chromewebstore.google.com/detail/appcues-builder/hjdcpbokggnjjmcmbmhkbkmibdekodmk",
+    displayUrl: "extension/appcues",
+  },
+  {
+    image: studio,
+    title: "Studio",
+    description:
+      "Web platform to manage flows, activation rules, user segmentation, and metrics.",
+    url: "https://www.appcues.com/",
+    displayUrl: "appcues.com",
+  },
+  {
     image: mobileBuilder,
     title: "Mobile Builder",
     description:
@@ -24,7 +62,7 @@ const projects = [
     title: "Nordy",
     description:
       "Web dictionary with words and meanings learned by me on a daily basis.",
-    url: "https://nordy.vercel.app/",
+    url: "https://nordy.vercel.app",
     displayUrl: "nordy.vercel.app",
     source: "https://github.com/FredericoVieira/nordy",
   },
@@ -41,7 +79,7 @@ const projects = [
     title: "Lilly Tempo Website",
     description:
       "Personalized Diabetes Management Platform for patients and healthcare professionals.",
-    url: "https://www.lillytempo.com/",
+    url: "https://www.lillytempo.com",
     displayUrl: "lillytempo.com",
   },
   {
@@ -57,8 +95,6 @@ const projects = [
     title: "IZZI Gaming",
     description:
       "Web platform of coaching, courses, and game replay analysis to improve e-players skills.",
-    url: "https://izzi.gg/",
-    displayUrl: "izzi.gg",
   },
   {
     image: bdmg,
@@ -73,7 +109,7 @@ const projects = [
     title: "KIM+ App",
     description:
       "Service management app with bills payment, phone data recharge and discounts offers.",
-    url: "https://kimmais.app/",
+    url: "https://kimmais.app",
     displayUrl: "kimmais.app",
   },
   {
@@ -87,7 +123,7 @@ const projects = [
     title: "Dataviva",
     description:
       "Collaborative visualization platform of Brazilian socioeconomic data, with data analysis and comparison.",
-    url: "http://dataviva.info/pt/",
+    url: "http://dataviva.info/pt",
     displayUrl: "dataviva.info",
     source: "https://github.com/DataViva",
   },

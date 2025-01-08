@@ -17,7 +17,9 @@ const Projects = () => {
     <>
       <Header
         title={headerTitle}
-        subtitle="Most of the projects are from private companies but feel free to explore if pique your interest. Don't forget to review the code from the open-source ones and contribute if you see room to improvement!"
+        subtitle="Most of the projects are from private companies but feel free to explore
+        if pique your interest. Don't forget to review the code from the open-source ones
+        and contribute if you see room to improvement!"
       />
       <ul
         role="list"
@@ -60,7 +62,7 @@ const Projects = () => {
                 </Link>
               )}
             </li>
-          )
+          ),
         )}
       </ul>
     </>

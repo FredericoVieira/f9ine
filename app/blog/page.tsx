@@ -20,7 +20,8 @@ const Blog = () => {
     <>
       <Header
         title={headerTitle}
-        subtitle="All of my long-form thoughts on technology, career development, programming tips, lifestyle, insights, and more listed here."
+        subtitle="All of my long-form thoughts on technology, career development, programming tips,
+        lifestyle, insights, and more listed here."
       />
       <div className="md:border-l md:pl-6 md:border-zinc-700/40">
         <div className="flex max-w-3xl flex-col space-y-16">

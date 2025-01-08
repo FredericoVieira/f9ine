@@ -16,7 +16,11 @@ const Skills = () => {
     <>
       <Header
         title={headerTitle}
-        subtitle="I am proactive in seeking collaboration and diverse perspectives to drive the best solutions. Additionally, I pay meticulous attention to layout details and code organization to ensure exceptional user experiences. I also have a keen interest in documenting information and sharing insights."
+        subtitle="I collaborate closely with product and design to deliver effective,
+        user-focused solutions. I have strong attention to detail in UI implementation
+        and code organization, ensuring high-quality, scalable interfaces. I also value
+        clear documentation and knowledge sharing to support team efficiency and long-term
+        maintainability."
       />
       <div className="space-y-20">
         {skills.map(({ category, items }) => (
