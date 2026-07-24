@@ -1,0 +1,77 @@
+---
+title: "O que acontece quando uma IA constrói um projeto inteiro?"
+language: "en"
+publishedAt: "2026-07-23"
+summary: "Um relato prático sobre desenvolver um projeto inteiro com o Claude, explorando onde a IA acelera o desenvolvimento, onde ainda falha e como ela está transformando o papel do desenvolvedor."
+keywords: "inteligência artificial, Claude Code, IA para programação, desenvolvimento de software, engenharia de software, produtividade, geração de código, LLM, arquitetura de software, experiência do desenvolvedor"
+---
+
+Separei uma ideia simples, defini um escopo bem delimitado e deixei o Claude Code ser o principal responsável pelo desenvolvimento da aplicação. O objetivo não era descobrir se a IA consegue escrever código — isso ela já faz muito bem. Eu queria entender até onde ela consegue ir antes de começar a exigir supervisão constante.
+
+Já utilizo o Claude diariamente no trabalho para refatorar funções, ganhar contexto sobre bases de código, criar testes e acelerar tarefas repetitivas. Mas desenvolver um projeto inteiro do zero é um desafio completamente diferente.
+
+## Preparando o experimento
+
+Antes de escrever o primeiro prompt, investi tempo definindo exatamente o que seria construído.
+
+Escolhi tecnologias bastante comuns — React, Next.js, Tailwind e Supabase — justamente para não criar dificuldades artificiais. Também defini as regras iniciais do produto, o fluxo de autenticação, o relacionamento entre os dados e toda a estrutura visual da aplicação: layouts, componentes, modais, tipografia, cores e organização dos elementos.
+
+Era um projeto pequeno, mas com um escopo extremamente bem definido.
+
+Utilizei o Claude Code no modo _Planning_ para iterar sobre essas definições até chegar a um documento completo, detalhando funcionalidades, responsabilidades e regras de negócio. A ideia era remover o máximo possível de ambiguidades antes de começar a gerar código.
+
+## O que funcionou muito bem
+
+Projetos como esse seguem padrões bastante conhecidos. Existe uma quantidade enorme de exemplos, boas práticas e documentação ensinando exatamente como estruturar esse tipo de aplicação.
+
+Surpreendendo exatamente zero pessoas, foi isso que aconteceu.
+
+No modo _Coding_, utilizando o Opus 4.6, o Claude produziu uma implementação que parecia uma síntese dessas referências: arquitetura conhecida, organização relativamente consistente e uma estrutura altamente parametrizada. Ao final da primeira execução eu já tinha uma aplicação funcionando localmente.
+
+Ela ainda não entregava valor para o usuário, mas autenticação, banco de dados, componentes, rotas e estrutura básica já estavam prontos. Em poucas horas eu tinha economizado uma quantidade significativa de trabalho mecânico.
+
+Foi nesse momento que ficou claro onde a IA se sobresai: acelerar tarefas que já possuem padrões bem estabelecidos.
+
+## Quando começaram os problemas
+
+Os desafios apareceram assim que comecei a adicionar regras menos triviais.
+
+Uma das funcionalidades envolvia decidir quando um modal deveria ou não ser exibido. Não era uma regra complicada — dependia apenas de três variáveis — mas foram necessárias diversas iterações até que o comportamento estivesse correto.
+
+Em outro momento, pedi uma alteração localizada e o modelo modificou arquivos que não tinham relação com a mudança solicitada. Em algumas ocasiões, correções que eu havia feito manualmente desapareceram porque foram sobrescritas por novas gerações de código. Conforme as regras aumentavam de complexidade, aumentava também a necessidade de revisar cuidadosamente tudo o que era produzido.
+
+## O excesso de engenharia
+
+Outra característica que chamou atenção foi a tendência da IA em criar soluções mais complexas do que o necessário. Ela parece tentar antecipar todos os possíveis casos futuros, adicionando abstrações, configurações e camadas extras antes que exista uma necessidade real.
+
+O resultado é um código que funciona, mas frequentemente mais difícil de entender e manter. Além disso, muito código deixa de ser utilizado conforme o projeto evolui. Hooks que nunca mais são chamados. Funções mortas. Componentes abandonados. Arquivos que permanecem apenas porque ninguém pediu explicitamente para removê-los. Essa "sujeira" vai se acumulando naturalmente durante as iterações.
+
+## Quem conhece a codebase?
+
+Talvez o aspecto mais interessante do experimento tenha sido perceber uma mudança no papel do desenvolvedor. Durante boa parte do desenvolvimento eu sabia onde cada funcionalidade estava, mas várias vezes me peguei pensando: Como isso foi implementado?
+
+Esse é um tipo de dúvida que dificilmente acontece quando somos nós que escrevemos o código. Sempre que isso acontecia eu interrompia o desenvolvimento, investigava a implementação e, na maioria das vezes, acabava refatorando alguma parte.
+
+Percebi que a IA muda completamente a forma como conhecemos uma codebase. Antes, escrever código era também o processo de entendê-lo. Agora, o código aparece pronto. O trabalho passa a ser auditá-lo para descobrir se as decisões tomadas fazem sentido.
+
+## Nem tudo vale um prompt
+
+Também descobri um trade-off curioso. A IA entrega uma solução rapidamente, mas pedir pequenos refinamentos nem sempre compensa. Mover um botão alguns pixels, trocar uma cor, reorganizar um componente, renomear uma função.
+
+Na prática, muitas dessas alterações são mais rápidas de fazer manualmente do que gastar tempo descrevendo exatamente o que deveria ser feito, esperar a geração e revisar tudo novamente. Existe um ponto em que abrir o editor continua sendo a opção mais eficiente.
+
+## Conclusão
+
+Na data em que escrevo este artigo (23/07/2026), minha impressão é bastante clara. A IA é uma excelente **ferramenta de desenvolvimento**. Ela economiza horas de trabalho repetitivo, acelera a criação de funcionalidades e reduz bastante o tempo gasto escrevendo código mecânico. Mas ela ainda precisa de direção constante.
+
+Minha experiência pode ser resumida assim:
+
+- Excelente para tarefas pequenas e bem delimitadas.
+- Muito eficiente quando recebe requisitos claros e prompts bem estruturados.
+- Começa a perder qualidade conforme as regras aumentam de complexidade.
+- Tende a produzir abstrações antes da necessidade, adicionando complexidade desnecessária.
+- Exige revisão constante para manter uma arquitetura consistente e uma base de código saudável.
+
+O maior ganho não foi escrever menos código. Foi deixar de escrever o código trivial. Hoje, o trabalho do desenvolvedor deixou de ser apenas produzir implementações. Passou a ser definir requisitos, revisar decisões, identificar más abstrações e garantir que a arquitetura continue fazendo sentido. A velocidade deixou de ser o gargalo. O gargalo agora é manter a qualidade enquanto uma IA produz centenas de linhas de código em poucos segundos.
+
+Agora resta esperar pelos próximos modelos, pela bolha estourar, pelos preços deixarem de ser sustentáveis, pelos tokens acabarem… ou pela água.

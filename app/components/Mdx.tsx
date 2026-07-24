@@ -32,6 +32,10 @@ const img = (props: ComponentPropsWithoutRef<"img">) => {
   );
 };
 
+const h2 = (props: ComponentPropsWithoutRef<"h2">) => (
+  <h2 className="text-xl font-semibold mt-8 mb-4" {...props} />
+);
+
 const ol = (props: ComponentPropsWithoutRef<"ol">) => (
   <ol className="list-decimal pl-6 my-4" {...props} />
 );
@@ -58,6 +62,7 @@ const pre = (props: ComponentPropsWithoutRef<"pre">) => (
 const MdxComponents: MdxComponentsType = {
   code,
   img,
+  h2,
   ol,
   ul,
   li,

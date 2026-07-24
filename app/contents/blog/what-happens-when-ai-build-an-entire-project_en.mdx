@@ -1,0 +1,77 @@
+---
+title: "What happens when AI build an entire project?"
+language: "en"
+publishedAt: "2026-07-23"
+summary: "An honest account of building an entire project with Claude, exploring where AI excels, where it struggles, and how it changes the role of software engineers."
+keywords: "artificial intelligence, Claude Code, AI coding, software engineering, developer productivity, code generation, LLMs, software architecture, developer experience, programming"
+---
+
+I picked a simple idea, defined a well-scoped project, and let Claude Code handle most of the implementation. The goal wasn't to see whether AI could write code — that's already well established. I wanted to understand how far it could go before requiring constant supervision.
+
+I already use Claude every day at work to refactor functions, understand unfamiliar codebases, generate tests, and speed up repetitive tasks. But building an entire project from scratch is a very different challenge.
+
+## Setting up the experiment
+
+Before writing a single prompt, I spent time defining exactly what would be built.
+
+I intentionally chose a familiar tech stack—React, Next.js, Tailwind CSS, and Supabase—to avoid introducing unnecessary complexity. I also documented the product requirements, authentication flow, database relationships, and the application's visual structure, including layouts, components, modals, typography, colors, and overall organization.
+
+The project itself was small, but the scope was carefully defined.
+
+Using Claude Code's _Planning_ mode, I iterated on these requirements until I had a detailed specification covering features, responsibilities, and business rules. The objective was to remove as much ambiguity as possible before generating any code.
+
+## What worked surprisingly well
+
+Projects like this follow well-established patterns. There are countless examples, best practices, and documentation showing exactly how to structure this type of application.
+
+Unsurprisingly, that's exactly what happened.
+
+Using Claude Code in _Coding_ mode with Opus 4.6, the generated implementation felt like a synthesis of those references: a familiar architecture, consistent organization, and a highly configurable structure. After the first run, I already had a working application running locally.
+
+It wasn't delivering any real user value yet, but authentication, database integration, routing, UI components, and the application's foundation were all in place. In just a few hours, I had skipped a significant amount of repetitive development work.
+
+That was the first clear takeaway: AI excels at accelerating work that follows well-known patterns.
+
+## Where things started to break down
+
+The challenges appeared as soon as I introduced less trivial business rules.
+
+One feature determined whether a modal should be displayed based on three variables. It wasn't particularly complicated, yet it took several iterations before the implementation behaved correctly.
+
+In another case, I requested a localized change, but the model modified unrelated files. Sometimes it even overwrote manual fixes I had already made with newly generated code. As the project became more complex, the amount of review required increased just as quickly.
+
+## The tendency to overengineer
+
+Another recurring behavior was the model's tendency to build solutions that were more complex than necessary. It consistently tried to anticipate future requirements by introducing abstractions, configuration layers, and additional architecture before there was any real need for them.
+
+The result was code that worked, but was often harder to understand and maintain. Unused hooks. Dead functions. Abandoned components. Files that stayed in the project simply because nobody explicitly asked the AI to remove them. Over multiple iterations, this technical debt accumulated naturally.
+
+## Who really knows the codebase?
+
+The most interesting part of the experiment wasn't about the code itself—it was about how my role as a developer changed. Throughout development, I generally knew where every feature lived, but I frequently caught myself asking: How exactly was this implemented?
+
+That's not a question I usually ask when I'm the one writing the code. Whenever it happened, I stopped what I was doing, inspected the implementation, and often ended up refactoring or simplifying it. It made me realize that AI fundamentally changes how developers become familiar with a codebase.
+
+Before, writing the code was also how you learned the system. Now, the code appears almost instantly. Your job shifts from authoring implementations to auditing them.
+
+## Not everything is worth a prompt
+
+I also discovered an interesting trade-off. AI can produce changes quickly, but asking for small refinements isn't always worth the effort. Moving a button a few pixels, changing a color, reorganizing a component, renaming a function.
+
+In many cases, it's faster to make those changes manually than to carefully describe them in a prompt, wait for the generation, and review the results afterward. At some point, opening your editor is simply the more efficient option.
+
+## Final thoughts
+
+As of July 23, 2026, my conclusion is fairly straightforward. AI is an excellent **development tool**. It saves hours of repetitive work, accelerates feature development, and dramatically reduces the time spent writing boilerplate code. But it still requires continuous guidance.
+
+My experience can be summarized like this:
+
+- Excellent for small, well-defined tasks.
+- Highly effective when given clear requirements and structured prompts.
+- Performance drops as business logic becomes more complex or ambiguous.
+- Tends to introduce abstractions before they're needed, resulting in unnecessary complexity.
+- Requires constant review to keep the architecture clean and maintainable.
+
+The biggest productivity gain wasn't writing less code. It was no longer writing the obvious code. Today, a developer's job is becoming less about producing implementations and more about defining requirements, reviewing decisions, identifying unnecessary abstractions, and keeping the architecture coherent. Speed is no longer the bottleneck. Maintaining quality while an AI generates hundreds of lines of code in seconds is.
+
+Now we wait for the next generation of models... for the AI bubble to burst, for token prices to become unsustainable, for the tokens to run out—or maybe just for the water to.
