@@ -21,13 +21,12 @@
         "name": "next"
       }
     ],
-    "baseUrl": ".",
     "paths": {
-      "@/contents": ["app/contents/index"],
-      "@/components": ["app/components/index"],
-      "@/db": ["app/db/index"],
-      "@/lib": ["app/lib/index"],
-      "@/public/*": ["public/*"],
+      "@/contents": ["./app/contents/index"],
+      "@/components": ["./app/components/index"],
+      "@/db": ["./app/db/index"],
+      "@/lib": ["./app/lib/index"],
+      "@/public/*": ["./public/*"],
     }
   },
   "include": [
