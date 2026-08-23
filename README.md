@@ -16,8 +16,7 @@ cd f9ine
 bun install
 ```
 
-Node.js version >= v18.17.0 is required for run this project.
-I'm using v18.20.4 and recommend the usage of NVM.
+Node.js version >= v26.7.0 is required for run this project. I recommend the usage of NVM.
 
 ### Development
 
