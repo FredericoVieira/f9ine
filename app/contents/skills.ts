@@ -15,15 +15,15 @@ const skills = [
         level: 5,
       },
       {
+        title: "GraphQL",
+        level: 4,
+      },
+      {
         title: "Python",
         level: 3,
       },
       {
         title: "SQL",
-        level: 3,
-      },
-      {
-        title: "GraphQL",
         level: 3,
       },
     ],
@@ -49,7 +49,7 @@ const skills = [
       },
       {
         title: "TypeScript",
-        level: 4,
+        level: 5,
       },
       {
         title: "Styled Components",
