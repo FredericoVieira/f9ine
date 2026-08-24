@@ -4,7 +4,7 @@ type DebouncedFunction<T extends (...args: any[]) => void> = (
 
 export const debounce = <T extends (...args: any[]) => void>(
   func: T,
-  delay: number
+  delay: number,
 ): DebouncedFunction<T> => {
   let timer: NodeJS.Timeout | undefined;
   return function (...args: Parameters<T>) {

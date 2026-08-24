@@ -33,19 +33,19 @@ const img = (props: ComponentPropsWithoutRef<"img">) => {
 };
 
 const h2 = (props: ComponentPropsWithoutRef<"h2">) => (
-  <h2 className="text-xl font-semibold mt-8 mb-4" {...props} />
+  <h2 className="mb-4 mt-8 text-xl font-semibold" {...props} />
 );
 
 const ol = (props: ComponentPropsWithoutRef<"ol">) => (
-  <ol className="list-decimal pl-6 my-4" {...props} />
+  <ol className="my-4 list-decimal pl-6" {...props} />
 );
 
 const ul = (props: ComponentPropsWithoutRef<"ul">) => (
-  <ul className="list-disc pl-6 my-4" {...props} />
+  <ul className="my-4 list-disc pl-6" {...props} />
 );
 
 const li = (props: ComponentPropsWithoutRef<"li">) => (
-  <li className="pl-4 mb-4" {...props} />
+  <li className="mb-4 pl-4" {...props} />
 );
 
 const p = (props: ComponentPropsWithoutRef<"p">) => (
@@ -54,7 +54,7 @@ const p = (props: ComponentPropsWithoutRef<"p">) => (
 
 const pre = (props: ComponentPropsWithoutRef<"pre">) => (
   <pre
-    className="text-sm text-wrap bg-neutral-800 my-8 p-4 rounded-lg"
+    className="my-8 text-wrap rounded-lg bg-neutral-800 p-4 text-sm"
     {...props}
   />
 );

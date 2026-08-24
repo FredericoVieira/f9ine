@@ -52,7 +52,7 @@ const BlogPost = async ({ params, searchParams }: BlogPostType) => {
 
   const { title, summary, publishedAt, readTime, content } = await getPost(
     slug,
-    language
+    language,
   );
 
   if (!title) {
@@ -78,7 +78,7 @@ const BlogPost = async ({ params, searchParams }: BlogPostType) => {
   const titleAction = (
     <Link
       href={`?language=${handleLanguageChange(language)}`}
-      className="text-lg transition-all text-zinc-400 hover:text-zinc-100 py-1 px-2"
+      className="px-2 py-1 text-lg text-zinc-400 transition-all hover:text-zinc-100"
     >
       {handleLanguageChange(language)}
     </Link>
@@ -93,7 +93,7 @@ const BlogPost = async ({ params, searchParams }: BlogPostType) => {
         subnote={subnote}
       />
       {content}
-      <div className="text-sm flex items-center justify-end gap-2 lg:mx-12 lg:flex-col lg:gap-4 lg:items-start lg:fixed lg:right-[8%] lg:bottom-[30%] xl:right-[16%] 2xl:right-[20%]">
+      <div className="flex items-center justify-end gap-2 text-sm lg:fixed lg:bottom-[30%] lg:right-[8%] lg:mx-12 lg:flex-col lg:items-start lg:gap-4 xl:right-[16%] 2xl:right-[20%]">
         <Likes slug={slug} userIP={userIP} />
         <Share />
       </div>

@@ -15,13 +15,21 @@ Write a plan a fresh context window (no memory of this conversation) could execu
 # Plan: [task]
 
 ## Summary
+
 ## Files to change
+
 [path — what and why]
+
 ## Steps
+
 [ordered, concrete]
+
 ## Validation strategy
+
 [which layer applies: types/lint, unit, integration — be specific about commands]
+
 ## Risks
+
 ## Out of scope
 ```
 

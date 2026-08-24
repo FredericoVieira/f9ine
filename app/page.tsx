@@ -5,12 +5,12 @@ const Home = () => {
   return (
     <>
       <Header title="Hey, I'm Fred!" />
-      <div className="space-y-7 text-base text-zinc-400 mb-12 sm:mb-16">
+      <div className="mb-12 space-y-7 text-base text-zinc-400 sm:mb-16">
         <p>
-          I&apos;m a Senior Product Engineer with 10+ years of experience
-          building scalable, user-focused applications. I specialize in React
-          and modern frontend architectures, with a strong focus on UX and
-          product development.
+          I&apos;m a Senior S Engineer with 10+ years of experience building
+          user-facing products at the intersection of engineering, product, and
+          design, turning complex requirements into intuitive, high-performance
+          interfaces.
         </p>
         <p>
           I enjoy turning complex requirements into simple, intuitive
@@ -18,13 +18,15 @@ const Home = () => {
           high-impact features.
         </p>
         <p>
-          With a degree in Computer Engineering, my background spans front-end,
-          back-end, and cloud, but my core strength is building
-          high-performance, user-facing interfaces.
+          With a degree in Computer Engineering, my background spans the full
+          software development lifecycle, from design and development to
+          testing, deployment, and maintenance, while driving architectural
+          decisions that improve engineering quality, developer experience, and
+          product delivery.
         </p>
       </div>
       <PhotoGrid />
-      <div className="space-y-7 text-base text-zinc-400 mb-12 sm:mb-16">
+      <div className="mb-12 space-y-7 text-base text-zinc-400 sm:mb-16">
         <p>
           Over the past few years, I&apos;ve been writing about technology,
           sharing practical insights on programming and professional growth

@@ -22,7 +22,7 @@ export const getLikes = async (slug: string, userIP: string) => {
 
   const postTotalLikes = Object.values(groupedData).reduce(
     (sum, likes) => sum + likes,
-    0
+    0,
   );
 
   return {

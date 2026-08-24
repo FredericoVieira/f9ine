@@ -16,20 +16,16 @@ const Skills = () => {
     <>
       <Header
         title={headerTitle}
-        subtitle="I collaborate closely with product and design to deliver effective,
-        user-focused solutions. I have strong attention to detail in UI implementation
-        and code organization, ensuring high-quality, scalable interfaces. I also value
-        clear documentation and knowledge sharing to support team efficiency and long-term
-        maintainability."
+        subtitle="I collaborate closely with product and design to deliver effective, user-focused solutions, while contributing across the full stack and driving architectural decisions. I have strong attention to detail in UI implementation, system design, and code organization, ensuring high-quality, scalable solutions. I also value clear documentation and knowledge sharing to support team efficiency and long-term maintainability."
       />
       <div className="space-y-20">
         {skills.map(({ category, items }) => (
           <section
             key={category}
             aria-labelledby={category}
-            className="md:border-l md:pl-6 md:border-zinc-700/40"
+            className="md:border-l md:border-zinc-700/40 md:pl-6"
           >
-            <div className="grid max-w-3xl grid-cols-1 gap-y-8 items-baseline md:grid-cols-4">
+            <div className="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
               <h2 id={category} className="text-sm font-semibold text-zinc-100">
                 {formatTitle(category)}
               </h2>
@@ -37,7 +33,7 @@ const Skills = () => {
                 <ul role="list" className="space-y-4">
                   {items.map(({ title, level }) => (
                     <li key={title}>
-                      <p className="text-sm text-zinc-400 mb-1">{title}</p>
+                      <p className="mb-1 text-sm text-zinc-400">{title}</p>
                       <div className="flex">
                         {[...Array(5)].map((_, index) => (
                           <Image

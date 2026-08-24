@@ -35,11 +35,11 @@ const Projects = () => {
                 alt={`${title} project`}
                 loading="lazy"
                 decoding="async"
-                className="relative z-10 aspect-[1.3/1] rounded-2xl object-cover bg-zinc-800 w-48 lg:w-32"
+                className="relative z-10 aspect-[1.3/1] w-48 rounded-2xl bg-zinc-800 object-cover lg:w-32"
                 src={image}
               />
               <h2 className="mt-6 text-base font-semibold text-zinc-100">
-                <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl bg-zinc-800/50"></div>
+                <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-800/50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"></div>
                 <span className="relative z-10">{title}</span>
               </h2>
               <p className="relative z-10 mt-2 text-sm text-zinc-400">
@@ -47,7 +47,7 @@ const Projects = () => {
               </p>
               {url && displayUrl && (
                 <Link href={url} target="_blank">
-                  <p className="relative z-10 mt-6 flex items-center text-sm font-medium transition text-zinc-200">
+                  <p className="relative z-10 mt-6 flex items-center text-sm font-medium text-zinc-200 transition">
                     <Image src={link} alt="Link" className="h-4 w-4" />
                     <span className="ml-2">{displayUrl}</span>
                   </p>
@@ -55,7 +55,7 @@ const Projects = () => {
               )}
               {source && (
                 <Link href={source} target="_blank">
-                  <p className="relative z-10 mt-2 flex items-center text-sm font-medium transition text-zinc-200">
+                  <p className="relative z-10 mt-2 flex items-center text-sm font-medium text-zinc-200 transition">
                     <Image src={code} alt="Link" className="h-4 w-4" />
                     <span className="ml-2">source code</span>
                   </p>

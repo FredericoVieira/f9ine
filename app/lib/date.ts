@@ -14,7 +14,7 @@ export const formatDate = (date: string, language = EN as LanguageType) => {
 
 export const formatStartEndDate = (
   startDate: string,
-  endDate: string | null
+  endDate: string | null,
 ) => {
   const options: Intl.DateTimeFormatOptions = {
     year: "numeric",
@@ -23,7 +23,7 @@ export const formatStartEndDate = (
 
   const startDateFormatted = new Date(startDate).toLocaleDateString(
     EN,
-    options
+    options,
   );
 
   const endDateFormatted = endDate

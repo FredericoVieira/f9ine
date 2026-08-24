@@ -10,7 +10,7 @@ type HeaderProps = {
 const Header = ({ title, titleAction, subtitle, subnote }: HeaderProps) => {
   return (
     <>
-      <div className="flex items-center mb-4">
+      <div className="mb-4 flex items-center">
         <h1 className="text-2xl font-semibold">{title}</h1>
         {titleAction}
       </div>
@@ -18,7 +18,7 @@ const Header = ({ title, titleAction, subtitle, subnote }: HeaderProps) => {
         <div className={"mb-12 sm:mb-16"}>
           {subtitle && <p className="text-base text-zinc-400">{subtitle}</p>}
           {subnote && (
-            <div className="text-sm text-zinc-400 mt-4">{subnote}</div>
+            <div className="mt-4 text-sm text-zinc-400">{subnote}</div>
           )}
         </div>
       )}

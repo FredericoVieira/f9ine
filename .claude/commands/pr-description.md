@@ -11,10 +11,15 @@ argument-hint: "[optional: path to plan file]"
 
 ```markdown
 ## Summary
+
 ## Changes
+
 [grouped, not one bullet per file]
+
 ## Testing
+
 [what actually ran]
+
 ## Notes for reviewers
 ```
 

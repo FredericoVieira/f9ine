@@ -1,8 +1,4 @@
 {
   "_comment": "Optional. If this file exists, stop_validate.py uses ONLY these commands and skips auto-detection. Use this for anything the auto-detector gets wrong or doesn't support (monorepos, custom scripts, non-standard test runners).",
-  "commands": [
-    "npm run lint",
-    "npm run typecheck",
-    "npm test -- --run"
-  ]
+  "commands": ["npm run lint", "npm run typecheck", "npm test -- --run"]
 }

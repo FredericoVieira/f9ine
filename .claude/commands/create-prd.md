@@ -11,12 +11,19 @@ Ask clarifying questions first — scope, user, edge cases, "done" — before dr
 # PRD: [name]
 
 ## Problem
+
 ## Goals / Non-goals
+
 ## User stories
+
 ## Requirements
+
 [numbered, testable]
+
 ## Edge cases & error states
+
 ## Success criteria
+
 ## Open questions
 ```
 

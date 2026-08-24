@@ -23,14 +23,14 @@ const navItems = {
 
 const Navbar = () => {
   return (
-    <aside className="flex flex-row items-center justify-between -ml-[8px] -mr-[8px] mt-10 mb-14 tracking-tight">
+    <aside className="-ml-[8px] -mr-[8px] mb-14 mt-10 flex flex-row items-center justify-between tracking-tight">
       <nav id="nav" className="flex">
         {Object.entries(navItems).map(([path, { name }]) => {
           return (
             <Link
               key={path}
               href={path}
-              className="transition-all hover:text-neutral-400 py-1 px-2"
+              className="px-2 py-1 transition-all hover:text-neutral-400"
             >
               {name}
             </Link>

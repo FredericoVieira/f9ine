@@ -18,7 +18,7 @@ const BoltSVG = ({ clipPath }: BoltSVGType) => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 448 512"
-      className="w-8 h-8"
+      className="h-8 w-8"
     >
       <path fill="var(--tw-color-neutral-600)" d={path} />
       <path
@@ -58,7 +58,7 @@ const Likes = ({ slug, userIP }: LikesType) => {
     debounce(({ slug, userIP, currentLikes }) => {
       incrementLikes({ slug, userIP, currentLikes });
     }, 500),
-    []
+    [],
   );
 
   const handleIncrementLikes = async () => {
@@ -79,7 +79,7 @@ const Likes = ({ slug, userIP }: LikesType) => {
       >
         <BoltSVG clipPath={clipPath} />
       </button>
-      <span className="font-bold pl-2">{postLikes}</span>
+      <span className="pl-2 font-bold">{postLikes}</span>
     </div>
   );
 };

@@ -23,23 +23,23 @@ const Blog = () => {
         subtitle="All of my long-form thoughts on technology, career development, programming tips,
         lifestyle, insights, and more listed here."
       />
-      <div className="md:border-l md:pl-6 md:border-zinc-700/40">
+      <div className="md:border-l md:border-zinc-700/40 md:pl-6">
         <div className="flex max-w-3xl flex-col space-y-16">
           {postsData.map(({ slug, title, summary, publishedAt }) => (
             <article
               key={slug}
               className="md:grid md:grid-cols-4 md:items-baseline"
             >
-              <div className="md:col-span-3 group relative flex flex-col items-start">
+              <div className="group relative flex flex-col items-start md:col-span-3">
                 <h2 className="text-base font-semibold tracking-tight text-zinc-100">
-                  <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-4 sm:rounded-2xl bg-zinc-800/50"></div>
+                  <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-800/50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-4 sm:rounded-2xl"></div>
                   <Link href={`/blog/${slug}?language=${EN}`}>
                     <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
                     <span className="relative z-10">{title}</span>
                   </Link>
                 </h2>
                 <time
-                  className="md:hidden relative z-10 order-first mb-3 flex items-center text-sm text-zinc-500 pl-3.5"
+                  className="relative z-10 order-first mb-3 flex items-center pl-3.5 text-sm text-zinc-500 md:hidden"
                   dateTime={publishedAt}
                 >
                   <span
@@ -66,7 +66,7 @@ const Blog = () => {
                 </div>
               </div>
               <time
-                className="mt-1 hidden md:block relative z-10 order-first mb-3 items-center text-sm text-zinc-500"
+                className="relative z-10 order-first mb-3 mt-1 hidden items-center text-sm text-zinc-500 md:block"
                 dateTime={publishedAt}
               >
                 {formatDate(publishedAt)}

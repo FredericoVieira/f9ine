@@ -1,11 +1,11 @@
 # How this works
 
-| Type | Where | Runs | Example |
-|---|---|---|---|
-| Command | `.claude/commands/*.md` | Only when typed `/name` | `/plan` |
-| Skill | `.claude/skills/*/SKILL.md` | Auto, when relevant | `debug` |
-| Subagent | `.claude/agents/*.md` | When delegated to | `code-reviewer` |
-| Hook | `.claude/hooks/*.py` + `settings.json` | Fixed trigger, can't be skipped | `security_guard` |
+| Type     | Where                                  | Runs                            | Example          |
+| -------- | -------------------------------------- | ------------------------------- | ---------------- |
+| Command  | `.claude/commands/*.md`                | Only when typed `/name`         | `/plan`          |
+| Skill    | `.claude/skills/*/SKILL.md`            | Auto, when relevant             | `debug`          |
+| Subagent | `.claude/agents/*.md`                  | When delegated to               | `code-reviewer`  |
+| Hook     | `.claude/hooks/*.py` + `settings.json` | Fixed trigger, can't be skipped | `security_guard` |
 
 **Commands = things you ask for. Skills = things Claude just does. Hooks = things enforced regardless.**
 
@@ -35,6 +35,7 @@ Priming is automatic (`session_prime` hook, runs at session start). `/plan` writ
 ```bash
 ./install.sh /path/to/your-project
 ```
+
 Copies everything, creates CLAUDE.md if missing, and — if `claude` is on PATH and CLAUDE.md was just created — launches `/create-rules` interactively. `--no-launch` to skip. Safe to re-run.
 
 ## Adjusting per project

@@ -88,11 +88,11 @@ const PhotoGrid = () => {
   const imagesPerColumn = Math.ceil(images.length / imageGridColumns);
 
   const imageColumns = Array.from({ length: imageGridColumns }, (_, i) =>
-    images.slice(i * imagesPerColumn, (i + 1) * imagesPerColumn)
+    images.slice(i * imagesPerColumn, (i + 1) * imagesPerColumn),
   );
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 sm:mb-16">
+    <div className="mb-12 grid grid-cols-2 gap-4 sm:mb-16 md:grid-cols-4">
       {imageColumns.map((columnImages, columnIndex) => (
         <div className="grid gap-4" key={columnIndex}>
           {columnImages.map(({ src, alt }, index) => (

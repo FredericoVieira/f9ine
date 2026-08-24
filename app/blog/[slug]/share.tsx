@@ -32,8 +32,8 @@ const Share = () => {
         <Image src={share} alt="Share" className="h-5 w-8" />
       </button>
       {showTooltip && (
-        <div className="absolute top-9 -left-1/2 lg:left-1/2 transform -translate-x-1/2 bg-neutral-800 py-2 px-4 rounded-md whitespace-nowrap z-10">
-          <div className="absolute -top-1.5 right-4 lg:left-1/2 transform -translate-x-1/2 rotate-45 w-3 h-3 bg-neutral-800" />
+        <div className="absolute -left-1/2 top-9 z-10 -translate-x-1/2 transform whitespace-nowrap rounded-md bg-neutral-800 px-4 py-2 lg:left-1/2">
+          <div className="absolute -top-1.5 right-4 h-3 w-3 -translate-x-1/2 rotate-45 transform bg-neutral-800 lg:left-1/2" />
           Link copied!
         </div>
       )}
