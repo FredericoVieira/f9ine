@@ -37,6 +37,7 @@ const SocialMedia = () => {
           key={title}
           href={url}
           target="_blank"
+          rel="noopener noreferrer"
           className="text-zinc-400 hover:text-zinc-100"
         >
           <Image

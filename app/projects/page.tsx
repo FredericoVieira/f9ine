@@ -46,7 +46,7 @@ const Projects = () => {
                 {description}
               </p>
               {url && displayUrl && (
-                <Link href={url} target="_blank">
+                <Link href={url} target="_blank" rel="noopener noreferrer">
                   <p className="relative z-10 mt-6 flex items-center text-sm font-medium text-zinc-200 transition">
                     <Image src={link} alt="Link" className="h-4 w-4" />
                     <span className="ml-2">{displayUrl}</span>
@@ -54,7 +54,7 @@ const Projects = () => {
                 </Link>
               )}
               {source && (
-                <Link href={source} target="_blank">
+                <Link href={source} target="_blank" rel="noopener noreferrer">
                   <p className="relative z-10 mt-2 flex items-center text-sm font-medium text-zinc-200 transition">
                     <Image src={code} alt="Link" className="h-4 w-4" />
                     <span className="ml-2">source code</span>
