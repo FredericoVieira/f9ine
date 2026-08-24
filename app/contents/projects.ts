@@ -1,3 +1,5 @@
+import fl9nt from "@/public/projects/fl9nt.png";
+import bocaDeUrnai from "@/public/projects/boca-de-urnai.png";
 import funWithFlags from "@/public/projects/fun-with-flags.png";
 import layoffield from "@/public/projects/layoffield.png";
 import appcuesBuilder from "@/public/projects/appcues-builder.png";
@@ -65,6 +67,22 @@ const projects = [
     url: "https://nordy.vercel.app",
     displayUrl: "nordy.vercel.app",
     source: "https://github.com/FredericoVieira/nordy",
+  },
+  {
+    image: fl9nt,
+    title: "Fl9nt",
+    description:
+      "Interview practice platform with role-specific simulations to help candidates prepare for real job interviews.",
+    url: "https://fl9nt.vercel.app",
+    displayUrl: "fl9nt.vercel.app",
+  },
+  {
+    image: bocaDeUrnai,
+    title: "Boca de Urnai",
+    description:
+      "AI-powered voting assistant platform that helps Brazilian voters get answers to their election questions.",
+    url: "https://bocadeurnai.com.br",
+    displayUrl: "bocadeurnai.com.br",
   },
   {
     image: hp,
